@@ -1,0 +1,61 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefix Notation Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Prefix Notation Calculator</h1>
+        <input type="text" id="expression" placeholder="Enter prefix expression (e.g., +3 4)">
+        <button onclick="calculate()">Calculate</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefix Notation Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Prefix Notation Calculator</h1>
+        <input type="text" id="expression" placeholder="Enter prefix expression (e.g., + 3 4)" readonly>
+        <div class="buttons">
+            <!-- Number buttons -->
+            <button onclick="appendToExpression('1')">1</button>
+            <button onclick="appendToExpression('2')">2</button>
+            <button onclick="appendToExpression('3')">3</button>
+            <button onclick="appendToExpression('4')">4</button>
+            <button onclick="appendToExpression('5')">5</button>
+            <button onclick="appendToExpression('6')">6</button>
+            <button onclick="appendToExpression('7')">7</button>
+            <button onclick="appendToExpression('8')">8</button>
+            <button onclick="appendToExpression('9')">9</button>
+            <button onclick="appendToExpression('0')">0</button>
+            
+            <!-- Operator buttons -->
+            <button onclick="appendToExpression('+')">+</button>
+            <button onclick="appendToExpression('-')">-</button>
+            <button onclick="appendToExpression('*')">*</button>
+            <button onclick="appendToExpression('/')">/</button>
+            <button onclick="appendToExpression(' ')">Space</button>
+            
+            <!-- Control buttons -->
+            <button onclick="calculate()">=</button>
+            <button onclick="clearExpression()">C</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
